@@ -194,7 +194,8 @@ app.post("/student/update", (req, res) => {
 //<label><input checkbox></label> helps -> can click text
 app.use((req,res,next)=>{
     //res.status(404).send("Uh Oh Bro - 4 0 4");
-    res.status(404).sendFile(path.join(__dirname,"/views/E404.html"))
+    //res.status(404).sendFile(path.join(__dirname,"/views/E404.html"));
+    res.status(404).render("E404");
 });
 
 // setup http server to listen on HTTP_PORT
