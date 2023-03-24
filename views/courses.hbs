@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-12">
+        <br>
+        <h2>Students</h2>
+        <hr/>
+        <!--p>TODO: render a list of all student first and last names here</p>
+        {{#if message}}
+            {{message}}
+        {{else}}-->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each course}}
+                        <tr>
+                            <td class="courseRow"><a href="/course/{{this.courseId}}">{{this.courseCode}}</a></td>
+                            <td class="courseRow"><a href="/students?course={{this.courseId}}">{{this.courseDescription}}</a></td>
+                        <tr/>
+                    {{/each}} 
+                </tbody>
+
+            </table>
+        {{/if}}
+        <hr/>
+        <br/>
+    </div>
+</div>
