@@ -75,7 +75,7 @@ app.get("/students", (req, res) => {
         }else{
             res.json({message: "Enter Valid Course Number: 1-11"});
         }
-    }else{//if no param then:
+    }else{//if no param then: 
  
         moduleAccess.getAllStudents().then(function(studentData){
             console.log("Successfully retrieved " + (studentData.length) + " students");
