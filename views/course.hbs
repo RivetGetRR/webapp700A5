@@ -1,6 +1,9 @@
 <div class="row">
     <div class="col-md-12">
     <br>
+     {{#if message}}
+            {{message}}
+        {{else}}
     <h2>{{course.courseDescription}}</h2>
     <hr />
     <form>
@@ -20,5 +23,6 @@
         </div>
         <hr />
     </form>
+    {{/if}}
     </div>
 </div>
