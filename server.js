@@ -108,8 +108,8 @@ app.get("/course/:id", (req, res) => {
         console.log("Successfully retrieved " + (courseData.courseId + "-" + courseData.courseCode + " " + courseData.courseDescription));
         //res.json(studentData);
         res.render("course", {course: courseData});
-    }).catch(errorMessageS=>{
-        console.log(errorMessageS);
+    }).catch(errorMessageC=>{
+        console.log(errorMessageC);
         //res.json({message: errorMessageS});
         res.render("course", {message: errorMessageC});
     });
